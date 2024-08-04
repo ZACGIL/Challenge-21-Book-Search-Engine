@@ -6,10 +6,11 @@ export const GET_USER = gql`
       _id
       username
       email
-      thoughts {
-        _id
-        thoughtText
-        createdAt
+      savedBooks  {
+        authors
+        description
+        bookId
+        title
       }
     }
   }
@@ -21,11 +22,10 @@ export const GET_ME = gql`
       _id
       username
       email
-      thoughts {
-        _id
-        thoughtText
-        thoughtAuthor
-        createdAt
+      savedBooks  {
+        authors
+        description
+        title
       }
     }
   }

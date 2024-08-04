@@ -23,7 +23,7 @@ const typeDefs = `
     }
 
     type Query {
-    users: [User]
+    users: [User]!
     user(username: String!): User
     savedBooks(username: String): [Book]
     me: User
